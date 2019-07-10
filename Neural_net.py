@@ -12,6 +12,7 @@ class NeuralNet():
 
     def InitializeWeights(self,nodes):
         ''' Initailises the theta matrix with random valuse'''
+        self.weights = []
         self.nodes = nodes
         layers = len(nodes)
         for i in range(1,layers):
